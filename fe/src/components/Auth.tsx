@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import SERVER from "../utils";
+import { SERVER as server } from "../utils";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { useSelector } from "react-redux";
-
+const SERVER = process.env.SERVER_URL || server;
 const Auth = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");

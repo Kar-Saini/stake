@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Game from "./components/Game";
 import Simulation from "./components/Simulation";
 import Auth from "./components/Auth";
-import { useSelector } from "react-redux";
 
 export default function App() {
   return (

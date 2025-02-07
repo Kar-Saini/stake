@@ -18,6 +18,7 @@ export class Ball {
   private sinks: { x: number; y: number }[];
   private canvasContext: CanvasRenderingContext2D;
   onFinish: (index: number, startX: number) => void;
+
   constructor(
     x: number,
     y: number,
