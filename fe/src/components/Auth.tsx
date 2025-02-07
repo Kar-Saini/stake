@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { SERVER as server } from "../utils";
+import DEV_SERVER from "../utils";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-const SERVER = process.env.SERVER_URL || server;
+const SERVER = process.env.SERVER_URL || DEV_SERVER;
 const Auth = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");

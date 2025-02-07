@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Manager } from "../classes/Manager";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import SERVER from "../utils";
+import DEV_SERVER from "../utils";
+const SERVER = process.env.SERVER_URL || DEV_SERVER;
 
 const Game = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
